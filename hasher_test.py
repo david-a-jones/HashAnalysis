@@ -1,4 +1,5 @@
 from hasher import *
+import os
 
 #number of buckets
 m = int(input('Number of buckets: '))
@@ -28,12 +29,12 @@ def getKeyFrequencies(K):
 		fList[key] = fList[key] + 1
 	return fList
 	
-wordSet = listFromParse('word-list.txt')
+wordSet = listFromParse('datasets/word-list.txt')
 keySet = getKeySet(wordSet)
 frequencyList = getKeyFrequencies(keySet)
 
 #output the list to a file
-outName = 'frequency_mod_' + str(m) + '.txt'
+outName = 'frequencies/modHash/frequency_mod_' + str(m) + '.txt'
 outFile = open(outName,'w+')
 for f in frequencyList:
 	outFile.write(str(f)+'\n')
