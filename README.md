@@ -8,7 +8,7 @@ This project serves as a repository for implementing and testing various hash fu
 ## Overview of Directory Contents ##
 Within this repository there are the following directories:
 
-*frequencies - meant to hold output data of hash functions (currently formatted by separating integer keys on new lines). For example, the frequency of integer output 0 is on the first line. The frequency of 1 is on the second line, and so on.
+* frequencies - meant to hold output data of hash functions (currently formatted by separating integer keys on new lines). For example, the frequency of integer output 0 is on the first line. The frequency of 1 is on the second line, and so on.
 
-*datasets - meant to hold onto datasets used for hashing. Currently there is only one data file (a file called word-list.txt that contains about 114,000 words). More files may be added as necessary or for testing different applications.
+* datasets - meant to hold onto datasets used for hashing. Currently there is only one data file (a file called word-list.txt that contains about 114,000 words). More files may be added as necessary or for testing different applications.
 
