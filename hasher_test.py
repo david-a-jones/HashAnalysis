@@ -8,7 +8,7 @@ m = int(input('Number of buckets: '))
 def getKeySet(S):
 	K = []
 	for item in S:
-		K.append(modHash(item, m))
+		K.append(foldHash(item, m))
 	return K
 
 #parse a text document and store its content in a list (the words must be separated by newlines)
@@ -34,7 +34,7 @@ keySet = getKeySet(wordSet)
 frequencyList = getKeyFrequencies(keySet)
 
 #output the list to a file
-outName = 'frequencies/modHash/frequency_mod_' + str(m) + '.txt'
+outName = 'frequencies/foldHash/frequency_mod_' + str(m) + '.txt'
 outFile = open(outName,'w+')
 for f in frequencyList:
 	outFile.write(str(f)+'\n')
